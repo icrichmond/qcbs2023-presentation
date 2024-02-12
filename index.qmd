@@ -8,15 +8,29 @@ format:
 
 ## Cities are dynamic systems
 
--   mosaic of images of one place
+::: {layout="[[-1], [1], [-1]]"}
+::: columns
+::: {.column width="33%"}
+![](presentation_imgs/1950.png){fig-align="left"}
+:::
+
+::: {.column width="33%"}
+![](presentation_imgs/1993.png){fig-align="center"}
+:::
+
+::: {.column width="33%"}
+![](presentation_imgs/2021.png){fig-align="right"}
+:::
+:::
+:::
 
 ## Urban (re)development is social
 
 ![[New York Times](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html)](presentation_imgs/nyt.png)
 
-## Benefits of parks are complex
+## Benefits of parks are complex but important
 
--   
+![[National Recreations and Park Association](https://www.nrpa.org/contentassets/0e196db99af544bbba4f63f480c1316b/gupc-resource-guide.pdf)](presentation_imgs/parkbenefits.png)
 
 ## How do complicated histories interact with park benefits?
 
@@ -38,7 +52,6 @@ format:
 ![](presentation_imgs/Parc-Angrignon-2019.jpg){fig-align="center"}
 :::
 :::
-
 
 ## Collecting Montréal park trees and temperatures
 
@@ -107,3 +120,7 @@ In the neighbourhoods surrounding our parks we see:
 :::
 :::
 :::
+
+## Questions?
+
+![](presentation_imgs/bigtree.jpg){fig-align="center"}
