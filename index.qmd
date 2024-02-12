@@ -1,15 +1,22 @@
 ---
 title: "Cooling effect of Montréal parks minimally affected by historical legacies"
 author: "Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Gonzalez Sinisterra, Kayleigh Hutt-Taylor, Alec L. Robitaille, Carly D. Ziter"
-format: revealjs
-editor: visual
+format: 
+  revealjs:
+    theme: simple
 ---
 
 ## Cities are dynamic systems
 
+-   mosaic of images of one place
+
 ## Urban (re)development is social
 
+![[New York Times](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html)](presentation_imgs/nyt.png)
+
 ## Benefits of parks are complex
+
+-   
 
 ## How do complicated histories interact with park benefits?
 
@@ -18,21 +25,36 @@ editor: visual
 2.  What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation, a critical benefit?
 :::
 
-## Obtaining Montréal park histories
+## Collecting Montréal park histories
 
+::: columns
+::: {.column width="60%"}
+::: {layout="[[-1], [1], [-1]]"}
 ![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){fig-align="center"}
+:::
+:::
 
-## Obtaining Montréal park histories
-
+::: {.column width="40%"}
 ![](presentation_imgs/Parc-Angrignon-2019.jpg){fig-align="center"}
+:::
+:::
 
-## Obtaining Montréal park trees and temperatures
+
+## Collecting Montréal park trees and temperatures
 
 ![](presentation_imgs/figure_2.png){fig-align="center"}
 
 ## The "Luxury Effect" around our parks
 
--   
+In the neighbourhoods surrounding our parks we see:
+
+-   Lower proportions of visible minorities
+
+-   Higher proportions of highly educated people
+
+-   Higher incomes (**except in previously industrial parks**)
+
+-   More single detached homes (**except in previously industrial parks**)
 
 ## Cooling effect is similar across park types
 
@@ -46,7 +68,23 @@ editor: visual
 
 ![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
 
-## Let's put parks (and social housing policy) everywhere!
+## Let's put parks everywhere! (with thought and community-led policy)
+
+::: columns
+::: {.column width="50%"}
+-   Park cooling happens everywhere
+
+-   Legacy effects still dominate close to parks
+
+-   Parks in industrial areas have the potential to increase equity, *if done correctly*
+:::
+
+::: {.column width="50%"}
+![](presentation_imgs/gent2.png){fig-align="right"}
+
+![](presentation_imgs/gent1.png){fig-align="right"}
+:::
+:::
 
 ## Thank You!
 
@@ -64,6 +102,8 @@ editor: visual
 :::
 
 ::: {.column width="50%"}
+::: {layout="[[-1], [1], [-1]]"}
 ![](presentation_imgs/LabPhoto2022.jpg){fig-align="right"}
+:::
 :::
 :::
