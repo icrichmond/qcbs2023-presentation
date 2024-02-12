@@ -1,24 +1,69 @@
 ---
-title: "Untitled"
+title: "Cooling effect of Montréal parks minimally affected by historical legacies"
+author: "Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Gonzalez Sinisterra, Kayleigh Hutt-Taylor, Alec L. Robitaille, Carly D. Ziter"
 format: revealjs
 editor: visual
 ---
 
-## Quarto
+## Cities are dynamic systems
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+## Urban (re)development is social
 
-## Bullets
+## Benefits of parks are complex
 
-When you click the **Render** button a document will be generated that includes:
+## How do complicated histories interact with park benefits?
 
--   Content authored with markdown
--   Output from executable code
+::: incremental
+1.  Do the communities surrounding parks differ socio-demographically by past land-use type? If so, do these differences continue legacies of environmental racism?
+2.  What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation, a critical benefit?
+:::
 
-## Code
+## Obtaining Montréal park histories
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){fig-align="center"}
 
-```{r}
-1 + 1
-```
+## Obtaining Montréal park histories
+
+![](presentation_imgs/Parc-Angrignon-2019.jpg){fig-align="center"}
+
+## Obtaining Montréal park trees and temperatures
+
+![](presentation_imgs/figure_2.png){fig-align="center"}
+
+## The "Luxury Effect" around our parks
+
+-   
+
+## Cooling effect is similar across park types
+
+![](presentation_imgs/plu_temp_total.png){fig-align="center"}
+
+## Forests are similar across park types
+
+![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
+
+## Tree density drives cooling effect
+
+![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
+
+## Let's put parks (and social housing policy) everywhere!
+
+## Thank You!
+
+::: columns
+::: {.column width="50%"}
+![](presentation_imgs/ZULE_logo_green_name.png)
+
+-   Field Assistants
+
+-   City of Montréal, Baie d'Urfé, Beaconsfield
+
+-   Boroughs of Montréal
+
+-   Trees, parks, parking lots
+:::
+
+::: {.column width="50%"}
+![](presentation_imgs/LabPhoto2022.jpg){fig-align="right"}
+:::
+:::
