@@ -27,9 +27,16 @@ format:
 
 ## Urban (re)development is social
 
-::: r-stack
-![](presentation_imgs/tsitw.jpg){.fragment fig-align="center" width="50%"}
-![](presentation_imgs/toxic-industries.png){.fragment}
+::: {layout="[[-1], [1], [-1]]"}
+::: columns
+::: {.column width="40%"}
+![](presentation_imgs/tsitw.jpg){fig-align="center" width="50%"}
+:::
+
+::: {.column width="60%"}
+![](presentation_imgs/toxic-industries.png)
+:::
+:::
 :::
 
 ## Benefits of parks are complex but important
