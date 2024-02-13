@@ -4,3 +4,4 @@ project:
   output-dir: docs
 
 
+from: markdown+emoji

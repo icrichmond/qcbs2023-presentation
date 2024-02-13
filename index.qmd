@@ -11,15 +11,15 @@ format:
 ::: {layout="[[-1], [1], [-1]]"}
 ::: columns
 ::: {.column width="33%"}
-![](presentation_imgs/1950.png){fig-align="left"}
+![](presentation_imgs/1950_annotated.png){fig-align="left"}
 :::
 
 ::: {.column width="33%"}
-![](presentation_imgs/1993.png){fig-align="center"}
+![](presentation_imgs/1993_annotated.png){fig-align="center"}
 :::
 
 ::: {.column width="33%"}
-![](presentation_imgs/2021.png){fig-align="right"}
+![](presentation_imgs/2021_annotated.png){fig-align="right"}
 :::
 :::
 :::
@@ -35,39 +35,75 @@ format:
 ## How do complicated histories interact with park benefits?
 
 ::: incremental
-1.  Do the communities surrounding parks differ socio-demographically by past land-use type? If so, do these differences continue legacies of environmental racism?
-2.  What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation, a critical benefit?
+1.  Do the communities surrounding parks differ socio-demographically by past land-use type?
+2.  What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation?
 :::
 
 ## Collecting Montréal park histories
 
-::: columns
-::: {.column width="60%"}
-::: {layout="[[-1], [1], [-1]]"}
-![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){fig-align="center"}
-:::
-:::
+::: r-stack
+![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){.fragment}
 
-::: {.column width="40%"}
-![](presentation_imgs/Parc-Angrignon-2019.jpg){fig-align="center"}
-:::
+![](presentation_imgs/Parc-Angrignon-2019.jpg){.fragment}
 :::
 
 ## Collecting Montréal park trees and temperatures
 
 ![](presentation_imgs/figure_2.png){fig-align="center"}
 
-## The "Luxury Effect" around our parks
+## The "Luxury Effect" around our parks {.smaller}
 
-In the neighbourhoods surrounding our parks we see:
+::: {layout="[[-1], [1], [-1]]"}
+::: columns
+::: {.column width="60%"}
+```{r}
+#| echo: false
+#| eval: true
+#| message: false
+#| warning: false
 
--   Lower proportions of visible minorities
+library(sf)
+library(dplyr)
+library(ggplot2)
+library(ggmap)
+library(purrr)
 
--   Higher proportions of highly educated people
+parks <- read_sf('full_study_parks.gpkg')
 
--   Higher incomes (**except in previously industrial parks**)
+parks <- parks %>% 
+  filter(Name == "Frédéric-Back") %>% 
+  st_transform(., 3347)
 
--   More single detached homes (**except in previously industrial parks**)
+buffer <- st_buffer(parks, 1000) %>% 
+  st_transform(., 4326) 
+
+
+buffer_latlon <- buffer %>% 
+  mutate(lat = unlist(map(buffer$geometry,1)),
+         long = unlist(map(buffer$geometry,2)))
+
+
+# API: AIzaSyDlRF5BYeskCH7qWtq13WUV5ifG9Q1kT1c
+register_google(key = "AIzaSyDlRF5BYeskCH7qWtq13WUV5ifG9Q1kT1c")
+satcol <- qmap(location = "Frederic-Back Park, Montreal, Quebec", zoom = 13, maptype = "satellite", source = "google") 
+  #geom_polygon(data = buffer_latlon, aes(x = lat, y = long), fill = NA, colour = "black", linewidth = 1) 
+
+print(satcol)
+
+```
+:::
+
+::: {.column width="40%"}
+-   ⬇️ visible minorities
+
+-   ⬆️ highly educated people
+
+-   ⬆️ incomes *
+
+-   ⬆️ single detached homes *
+:::
+:::
+:::
 
 ## Cooling effect is similar across park types
 
@@ -77,7 +113,7 @@ In the neighbourhoods surrounding our parks we see:
 
 ![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
 
-## Tree density drives cooling effect
+## Tree density & size drives cooling effect
 
 ![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
 

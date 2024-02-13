@@ -348,19 +348,19 @@ Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Go
 <div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-left">
 <figure>
-<p><img data-src="presentation_imgs/1950.png"></p>
+<p><img data-src="presentation_imgs/1950_annotated.png"></p>
 </figure>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="presentation_imgs/1993.png"></p>
+<p><img data-src="presentation_imgs/1993_annotated.png"></p>
 </figure>
 </div>
 </div><div class="column" style="width:33%;">
 <div class="quarto-figure quarto-figure-right">
 <figure>
-<p><img data-src="presentation_imgs/2021.png"></p>
+<p><img data-src="presentation_imgs/2021_annotated.png"></p>
 </figure>
 </div>
 </div>
@@ -380,15 +380,24 @@ Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Go
 <h2>How do complicated histories interact with park benefits?</h2>
 <div>
 <ol type="1">
-<li class="fragment">Do the communities surrounding parks differ socio-demographically by past land-use type? If so, do these differences continue legacies of environmental racism?</li>
-<li class="fragment">What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation, a critical benefit?</li>
+<li class="fragment">Do the communities surrounding parks differ socio-demographically by past land-use type?</li>
+<li class="fragment">What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation?</li>
 </ol>
 </div>
 </section>
 <section id="collecting-montréal-park-histories" class="slide level2">
 <h2>Collecting Montréal park histories</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
+<div class="r-stack">
+<p><img data-src="presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg" class="fragment"></p>
+<p><img data-src="presentation_imgs/Parc-Angrignon-2019.jpg" class="fragment"></p>
+</div>
+</section>
+<section id="collecting-montréal-park-trees-and-temperatures" class="slide level2">
+<h2>Collecting Montréal park trees and temperatures</h2>
+
+<img data-src="presentation_imgs/figure_2.png" class="r-stretch quarto-figure-center"></section>
+<section id="the-luxury-effect-around-our-parks" class="slide level2 smaller">
+<h2>The “Luxury Effect” around our parks</h2>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
 <div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
@@ -396,37 +405,24 @@ Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Go
 </div>
 </div>
 <div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg"></p>
-</figure>
-</div>
-</div>
+<div class="columns quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
 </div>
 </div>
 </div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="presentation_imgs/Parc-Angrignon-2019.jpg"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="collecting-montréal-park-trees-and-temperatures" class="slide level2">
-<h2>Collecting Montréal park trees and temperatures</h2>
-
-<img data-src="presentation_imgs/figure_2.png" class="r-stretch quarto-figure-center"></section>
-<section id="the-luxury-effect-around-our-parks" class="slide level2">
-<h2>The “Luxury Effect” around our parks</h2>
-<p>In the neighbourhoods surrounding our parks we see:</p>
 <ul>
-<li><p>Lower proportions of visible minorities</p></li>
-<li><p>Higher proportions of highly educated people</p></li>
-<li><p>Higher incomes (<strong>except in previously industrial parks</strong>)</p></li>
-<li><p>More single detached homes (<strong>except in previously industrial parks</strong>)</p></li>
+<li><p>⬇️ visible minorities</p></li>
+<li><p>⬆️ highly educated people</p></li>
+<li><p>⬆️ incomes *</p></li>
+<li><p>⬆️ single detached homes *</p></li>
 </ul>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="cooling-effect-is-similar-across-park-types" class="slide level2">
 <h2>Cooling effect is similar across park types</h2>
@@ -436,8 +432,8 @@ Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Go
 <h2>Forests are similar across park types</h2>
 
 <img data-src="presentation_imgs/plu_tree_direct.png" class="r-stretch quarto-figure-center"></section>
-<section id="tree-density-drives-cooling-effect" class="slide level2">
-<h2>Tree density drives cooling effect</h2>
+<section id="tree-density-size-drives-cooling-effect" class="slide level2">
+<h2>Tree density &amp; size drives cooling effect</h2>
 
 <img data-src="presentation_imgs/tree_temp_direct.png" class="r-stretch quarto-figure-center"></section>
 <section id="lets-put-parks-everywhere-with-thought-and-community-led-policy" class="slide level2">
@@ -713,6 +709,44 @@ Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Carolina Go
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
