@@ -4,6 +4,7 @@ author: "Isabella C. Richmond, Michael A. Paulauskas, Erica Padvaiskas, Laura Ca
 format: 
   revealjs:
     theme: simple
+    slide-number: c
 ---
 
 ## Cities are dynamic systems
@@ -26,7 +27,10 @@ format:
 
 ## Urban (re)development is social
 
-![[New York Times](https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html)](presentation_imgs/nyt.png)
+::: r-stack
+![](presentation_imgs/tsitw.jpg){.fragment fig-align="center" width="50%"}
+![](presentation_imgs/toxic-industries.png){.fragment}
+:::
 
 ## Benefits of parks are complex but important
 
@@ -51,11 +55,9 @@ format:
 
 ![](presentation_imgs/figure_2.png){fig-align="center"}
 
-## The "Luxury Effect" around our parks {.smaller}
+## The Luxury Effect around our parks
 
 ::: {layout="[[-1], [1], [-1]]"}
-::: columns
-::: {.column width="60%"}
 ```{r}
 #| echo: false
 #| eval: true
@@ -66,7 +68,6 @@ library(sf)
 library(dplyr)
 library(ggplot2)
 library(ggmap)
-library(purrr)
 
 parks <- read_sf('full_study_parks.gpkg')
 
@@ -78,31 +79,24 @@ buffer <- st_buffer(parks, 1000) %>%
   st_transform(., 4326) 
 
 
-buffer_latlon <- buffer %>% 
-  mutate(lat = unlist(map(buffer$geometry,1)),
-         long = unlist(map(buffer$geometry,2)))
-
-
 # API: AIzaSyDlRF5BYeskCH7qWtq13WUV5ifG9Q1kT1c
 register_google(key = "AIzaSyDlRF5BYeskCH7qWtq13WUV5ifG9Q1kT1c")
-satcol <- qmap(location = "Frederic-Back Park, Montreal, Quebec", zoom = 13, maptype = "satellite", source = "google") 
-  #geom_polygon(data = buffer_latlon, aes(x = lat, y = long), fill = NA, colour = "black", linewidth = 1) 
+satcol <- qmap(location = "Frederic-Back Park, Montreal, Quebec", zoom = 13, maptype = "satellite", source = "google") + 
+  geom_sf(data = buffer, fill = NA, colour = "red", linewidth = 1, inherit.aes = F) 
 
 print(satcol)
 
 ```
 :::
 
-::: {.column width="40%"}
 -   ⬇️ visible minorities
 
 -   ⬆️ highly educated people
 
--   ⬆️ incomes *
+-   ⬆️ incomes \*
 
--   ⬆️ single detached homes *
-:::
-:::
+-   ⬆️ single detached homes \*
+
 :::
 
 ## Cooling effect is similar across park types
@@ -113,17 +107,13 @@ print(satcol)
 
 ![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
 
-## Tree density & size drives cooling effect
-
-![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
-
 ## Let's put parks everywhere! (with thought and community-led policy)
 
 ::: columns
 ::: {.column width="50%"}
 -   Park cooling happens everywhere
 
--   Legacy effects still dominate close to parks
+-   Luxury effect dominates close to parks
 
 -   Parks in industrial areas have the potential to increase equity, *if done correctly*
 :::
@@ -160,3 +150,7 @@ print(satcol)
 ## Questions?
 
 ![](presentation_imgs/bigtree.jpg){fig-align="center"}
+
+## Tree density & size drives cooling effect
+
+![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
