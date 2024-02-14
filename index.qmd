@@ -7,50 +7,40 @@ format:
     slide-number: c
 ---
 
-## Cities are dynamic systems
+## Les villes sont dynamiques
 
 ::: {layout="[[-1], [1], [-1]]"}
 ::: columns
 ::: {.column width="33%"}
-![](presentation_imgs/1950_annotated.png){fig-align="left"}
+![1950 (Ville de Montréal)](presentation_imgs/1950_annotated.png){fig-align="left"}
 :::
 
 ::: {.column width="33%"}
-![](presentation_imgs/1993_annotated.png){fig-align="center"}
+![1993 (Ville de Montréal)](presentation_imgs/1993_annotated.png){fig-align="center"}
 :::
 
 ::: {.column width="33%"}
-![](presentation_imgs/2021_annotated.png){fig-align="right"}
+![2021 (Communauté Métropolitaine de Montréal)](presentation_imgs/2021_annotated.png){fig-align="right"}
 :::
 :::
 :::
 
-## Urban (re)development is social
+## Le (re)développement des espaces urbains est social
 
-::: {layout="[[-1], [1], [-1]]"}
-::: columns
-::: {.column width="40%"}
-![](presentation_imgs/tsitw.jpg){fig-align="center" width="50%"}
-:::
+![Bibliothèque et Archives Nationales du Québec, 1963](presentation_imgs/metropolitan.jpg)
 
-::: {.column width="60%"}
-![](presentation_imgs/toxic-industries.png)
-:::
-:::
-:::
-
-## Benefits of parks are complex but important
+## Les avantages des parcs sont complexes mais importants
 
 ![[National Recreations and Park Association](https://www.nrpa.org/contentassets/0e196db99af544bbba4f63f480c1316b/gupc-resource-guide.pdf)](presentation_imgs/parkbenefits.png)
 
-## How do complicated histories interact with park benefits?
+## Comment l'histoire influence-t-elle les avantages des parcs?
 
 ::: incremental
-1.  Do the communities surrounding parks differ socio-demographically by past land-use type?
-2.  What are the legacy effects of past land-use types on current park capacity to provide a temperature mitigation?
+1.  Est-ce que les communautés qui entourent nos parcs diffèrent-elles sociodémographiquement en fonction du type d'utilisation passée des terres?
+2.  Quels sont les effets des types d'utilisation passées des terres sur la capacité actuelle des parcs à atténuer les températures ?
 :::
 
-## Collecting Montréal park histories
+## Nous avons obtenu les histoires des parcs de Montréal
 
 ::: r-stack
 ![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){.fragment}
@@ -58,11 +48,11 @@ format:
 ![](presentation_imgs/Parc-Angrignon-2019.jpg){.fragment}
 :::
 
-## Collecting Montréal park trees and temperatures
+## Nous avons échantillonné des arbres et de la température dans les parcs de Montréal
 
 ![](presentation_imgs/figure_2.png){fig-align="center"}
 
-## The Luxury Effect around our parks
+## Le «Luxury Effect» qui entoure nos parcs
 
 ::: {layout="[[-1], [1], [-1]]"}
 ```{r}
@@ -106,11 +96,11 @@ print(satcol)
 
 :::
 
-## Cooling effect is similar across park types
+## L'effet de refroidissement est similaire pour tous les types de parcs
 
 ![](presentation_imgs/plu_temp_total.png){fig-align="center"}
 
-## Forests are similar across park types
+## Les forêts sont similaires pour tous les types de parcs
 
 ![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
 
@@ -132,29 +122,30 @@ print(satcol)
 :::
 :::
 
-## Thank You!
+## Merci Beaucoup!
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="60%"}
 ![](presentation_imgs/ZULE_logo_green_name.png)
 
--   Field Assistants
+![](presentation_imgs/LabPhoto2022.jpg){width="70%" fig-align="center"}
+
+:::
+
+::: {.column width="40%"}
+::: {layout="[[-1], [1], [-1]]"}
+-   Les assistants de terrain
 
 -   City of Montréal, Baie d'Urfé, Beaconsfield
 
--   Boroughs of Montréal
+-   Arrondissements de Montréal
 
--   Trees, parks, parking lots
-:::
-
-::: {.column width="50%"}
-::: {layout="[[-1], [1], [-1]]"}
-![](presentation_imgs/LabPhoto2022.jpg){fig-align="right"}
+-   Les arbres, les parcs, les stationnements
 :::
 :::
 :::
 
-## Questions?
+## Des questions?
 
 ![](presentation_imgs/bigtree.jpg){fig-align="center"}
 
