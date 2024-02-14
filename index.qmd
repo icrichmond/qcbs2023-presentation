@@ -31,7 +31,7 @@ format:
 
 ## Les avantages des parcs sont complexes mais importants
 
-![[National Recreations and Park Association](https://www.nrpa.org/contentassets/0e196db99af544bbba4f63f480c1316b/gupc-resource-guide.pdf)](presentation_imgs/parkbenefits.png)
+![[Le rapport sur les enjeux nationaux](https://changingclimate.ca/national-issues/fr/)](presentation_imgs/parkbenefits_fr.png)
 
 ## Comment l'histoire influence-t-elle les avantages des parcs?
 
@@ -43,9 +43,9 @@ format:
 ## Nous avons obtenu les histoires des parcs de Montréal
 
 ::: r-stack
-![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){.fragment}
+![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){.fragment width="80%" fig-align="center"}
 
-![](presentation_imgs/Parc-Angrignon-2019.jpg){.fragment}
+![](presentation_imgs/Parc-Angrignon-2019-fr.png){.fragment width="50%" fig-align="center"}
 :::
 
 ## Nous avons échantillonné des arbres et de la température dans les parcs de Montréal
@@ -104,15 +104,15 @@ print(satcol)
 
 ![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
 
-## Let's put parks everywhere! (with thought and community-led policy)
+## Des parcs partout! (avec une politique réfléchie et menée par la communauté)
 
 ::: columns
 ::: {.column width="50%"}
--   Park cooling happens everywhere
+-   Le refroidissement a lieu dans tous les parcs
 
--   Luxury effect dominates close to parks
+-   Le «Luxury Effect» domine à proximité des parcs
 
--   Parks in industrial areas have the potential to increase equity, *if done correctly*
+-   Les parcs qui étaient industriels ont le potentiel d'augmenter l'équité
 :::
 
 ::: {.column width="50%"}
