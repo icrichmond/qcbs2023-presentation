@@ -54,7 +54,6 @@ format:
 
 ## L'effet «Luxury» qui domine l'alentour de nos parcs
 
-::: {layout="[[-1], [1], [-1]]"}
 ```{r}
 #| echo: false
 #| eval: true
@@ -84,7 +83,7 @@ satcol <- qmap(location = "Frederic-Back Park, Montreal, Quebec", zoom = 13, map
 print(satcol) 
 
 ```
-:::
+
 
 ## 
 
