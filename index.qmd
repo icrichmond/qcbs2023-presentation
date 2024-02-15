@@ -29,18 +29,18 @@ format:
 
 ![Bibliothèque et Archives Nationales du Québec, 1963](presentation_imgs/metropolitan.jpg)
 
-## Les avantages des parcs sont complexes mais importants
+## Les avantages des parcs sont complexes et importants
 
 ![[Le rapport sur les enjeux nationaux](https://changingclimate.ca/national-issues/fr/)](presentation_imgs/parkbenefits_fr.png)
 
-## Comment l'histoire influence-t-elle les avantages des parcs?
+## Comment l'historique d'un parc influence-t-elle ses bénéfices aux utilisateurs?
 
 ::: incremental
-1.  Est-ce que les communautés qui entourent nos parcs diffèrent-elles sociodémographiquement en fonction du type d'utilisation passée des terres?
-2.  Quels sont les effets des types d'utilisation passées des terres sur la capacité actuelle des parcs à atténuer les températures ?
+1.  Est-ce que les communautés adjacentes parcs diffèrent-elles sociodémographiquement en fonction de l'historique de l'utilisation des sols?
+2.  Quels sont les effets de divers historique d'utilisation des sols sur la capacité actuelle des parcs à atténuer les températures ?
 :::
 
-## Nous avons obtenu les histoires des parcs de Montréal
+## Nous avons determiné l'histoire des parcs de Montréal
 
 ::: r-stack
 ![](presentation_imgs/Parc-Angrignon-1947-mosaic.jpeg){.fragment width="80%" fig-align="center"}
@@ -48,11 +48,11 @@ format:
 ![](presentation_imgs/Parc-Angrignon-2019-fr.png){.fragment width="50%" fig-align="center"}
 :::
 
-## Nous avons échantillonné des arbres et de la température dans les parcs de Montréal
+## Nous avons échantillonné les arbres et la température ambiente des parcs
 
 ![](presentation_imgs/figure_2.png){fig-align="center"}
 
-## Le «Luxury Effect» qui entoure nos parcs
+## L'effet «Luxury» qui domine l'alentour de nos parcs
 
 ::: {layout="[[-1], [1], [-1]]"}
 ```{r}
@@ -81,36 +81,55 @@ register_google(key = "AIzaSyDlRF5BYeskCH7qWtq13WUV5ifG9Q1kT1c")
 satcol <- qmap(location = "Frederic-Back Park, Montreal, Quebec", zoom = 13, maptype = "satellite", source = "google") + 
   geom_sf(data = buffer, fill = NA, colour = "red", linewidth = 1, inherit.aes = F) 
 
-print(satcol)
+print(satcol) 
 
 ```
 :::
 
--   ⬇️ visible minorities
+## 
 
--   ⬆️ highly educated people
+::: incremental
+::: columns
+::: {.column .center}
+**Pour tous les parcs :**
 
--   ⬆️ incomes \*
-
--   ⬆️ single detached homes \*
-
+-   [⬆]{style="color:#CFA35E;"} niveau d'éducation
+-   [⬇]{style="color:#45A291;"} minorités visibles
 :::
-
-## L'effet de refroidissement est similaire pour tous les types de parcs
-
-![](presentation_imgs/plu_temp_total.png){fig-align="center"}
-
-## Les forêts sont similaires pour tous les types de parcs
-
-![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
-
-## Des parcs partout! (avec une politique réfléchie et menée par la communauté)
+:::
 
 ::: columns
 ::: {.column width="50%"}
--   Le refroidissement a lieu dans tous les parcs
+Forestier 🌲 et agricole 🌾
 
--   Le «Luxury Effect» domine à proximité des parcs
+-   [⬆]{style="color:#CFA35E;"} salaire annuel
+-   [⬆]{style="color:#CFA35E;"} maison unifamiliale
+:::
+
+::: {.column width="50%"}
+Industriel 🏭
+
+-   [⬇]{style="color:#45A291;"} salaire annuel
+-   [⬇]{style="color:#45A291;"} maison unifamiliale
+:::
+:::
+:::
+
+## Pour tous les types de parcs, l'effet de refroidissement est similaire
+
+![](presentation_imgs/plu_temp_total.png){fig-align="center"}
+
+## Pour tous les types de parcs, les forêts sont similaires
+
+![](presentation_imgs/plu_tree_direct.png){fig-align="center"}
+
+## Mettons des parcs partout! ... sous une politique réfléchie, menée par et axée pour la communauté
+
+::: columns
+::: {.column width="50%"}
+-   Il y a un refroidissement dans tous les parcs
+
+-   L'effet «Luxury» domine à proximité des parcs
 
 -   Les parcs qui étaient industriels ont le potentiel d'augmenter l'équité
 :::
@@ -122,23 +141,20 @@ print(satcol)
 :::
 :::
 
-## Merci Beaucoup!
+## Merci beaucoup!
 
 ::: columns
 ::: {.column width="60%"}
 ![](presentation_imgs/ZULE_logo_green_name.png)
 
 ![](presentation_imgs/LabPhoto2022.jpg){width="70%" fig-align="center"}
-
 :::
 
 ::: {.column width="40%"}
 ::: {layout="[[-1], [1], [-1]]"}
 -   Les assistants de terrain
 
--   City of Montréal, Baie d'Urfé, Beaconsfield
-
--   Arrondissements de Montréal
+-   Ville de Montréal, Baie d'Urfé, Beaconsfield
 
 -   Les arbres, les parcs, les stationnements
 :::
@@ -148,7 +164,3 @@ print(satcol)
 ## Des questions?
 
 ![](presentation_imgs/bigtree.jpg){fig-align="center"}
-
-## Tree density & size drives cooling effect
-
-![](presentation_imgs/tree_temp_direct.png){fig-align="center"}
